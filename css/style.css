@@ -1,0 +1,235 @@
+h2 {
+
+    color: Green;
+}
+
+body {
+
+    background-color: #f4f4f4;
+    color: rgb(0,0,245);
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    /* Same as above */
+    font: normal 15px Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6em;
+}
+
+a {
+    /* this will make the links display without underline */
+    text-decoration: none;
+    color: #000;
+}
+
+/*  when you hover over any link the text turns red. */
+a:hover {
+    color:red;
+}
+
+/* active links */
+/* a:active {
+    color: green;
+} */
+
+/* this will make the links to turn yellow once visited */
+a:visited {
+    color: yellow;
+}
+/*  applies globally inside the container*/
+.container {
+     /* this will adjust the container to occupy 960px size of the browser page
+     width:960px;
+     /* this will adjust and divide the left and right side of the black spaces of the container
+     margin: auto;  */
+
+    /* this will make the container responsive the % is used to adjust as per the device size. Whatever may be the device size ( mobile, laptop, desktp, the wisht will be 80% of the device size*/ 
+    width : 80%;
+    margin: auto;
+}
+
+/*  applies globally */
+.button {
+    background-color: #333;
+    color: white;
+    padding: 10px  15px;
+    border: none;
+}
+
+.button:hover {
+    color: red;
+}
+
+.clr {
+    clear: both;
+}
+
+.box-1{
+    background-color: #333;
+    color: #fff;
+    /* adding border */
+    border-top: 5px red solid;
+    border-right:  5px red solid;
+    border-bottom: 5px red solid;
+    border-left: 5px red solid;
+    /* same as above */
+    border: 5px red solid;
+    border-bottom-width: 10px;
+    border-top-color: blue;
+    border-top-style: dotted;
+
+    /* padding */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* Same as above */
+    padding: 20px;
+
+    /* margin */
+    margin-top: 20px;
+    margin:20px 0;
+}
+
+
+/* text styling */
+.box-1 h2 {
+    font-family: Tahoma;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    word-spacing: 1em;
+}
+
+.box-2 {
+    border: 3px solid rebeccapurple;
+    padding: 30px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.categories {
+    border:1px solid #ccc;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.categories h2 {
+    text-align: center;
+}
+
+.categories ul {
+    padding-left: 20px;
+    /* this will give a square box next to each category */
+    list-style: square; 
+    list-style: none; 
+}
+
+.categories li {
+    padding-bottom: 6px;
+    border-bottom: dotted 1px #333;
+    /* this will add a image next to each category */
+    /* list-style-image: url("../images/tinycheck.jpg"); */
+}
+
+.my-form {
+    padding: 20px;
+}
+
+.my-form .form-group {
+    padding-bottom:15px;
+
+}
+
+.my-form label {
+    display: block;
+}
+
+.my-form input [type = "text"],.my-form textarea {
+    padding: 8px;
+    width: 100%
+}
+
+/* float */
+.block {
+    float: left;
+    width: 33.3%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#main-block {
+    float: left;
+    /* maing it responsive */
+    width: 70%; 
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#sidebar {
+    float: right;
+    width: 30%;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+/* Positioning */
+.p-box {
+    width: 900px;
+    height: 500px;
+    border: 1px solid black;
+    margin: 30px;
+    /* this will make the positioning relative that is p-box */
+    position: relative;
+    /* Setting images as element background */
+    background-image: url("../images/abstract.jpeg");
+    background-repeat: no-repeat;
+    background-position: 100px 200px;
+    background-position: center top;
+}
+
+.p-box h1 {
+    /* positions as per the postioning set to its parent i.e., p-box */
+    position: absolute;
+    top:100px;
+    left: 40px;
+    /* down 100 from p-box and to the left 40 */
+}
+
+.p-box h2{
+    position: absolute;
+    bottom:40px;
+    right: 140px;
+}
+
+/* fixed positioning */
+
+.fix-me {
+    /* keeps the Howdy fix-me button stas there 400px from top of the browser no matter where you are on the webpage.  */
+    position: fixed;
+    top: 400px;
+}
+
+/* pseudo classes */
+.my-list li:first-child{
+    background: red;
+}
+
+.my-list li:last-child{
+    background: blue;
+}
+
+.my-list li:nth-child(5){
+   color: orange;
+}
+
+.my-list li:nth-child(even){
+    background: grey;
+ }
